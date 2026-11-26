@@ -16,7 +16,7 @@ view = gl.GLViewWidget()
 
 
 # Constants
-u_0 = 1.26e9 * u.N/u.A**2
+u_0 = 1.26e-9 * u.N/u.A**2
 pi = u.pi
 small_dist = 0.00001 * u.m
 
