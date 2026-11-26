@@ -63,7 +63,7 @@ class Particle:
         dist = pos-self.pos
         r = np.linalg.norm(dist)
         if r <= small_dist:
-            return 0 * u.T
+            return np.zeros_like(pos) * u.T
         r_hat = dist/r
         return self.charge * u_0/(4*pi) * (np.cross(self.velocity, r_hat)/r**2)
     
